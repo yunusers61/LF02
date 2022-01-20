@@ -6,7 +6,7 @@ public class Torwart extends Spieler {
     private int reaktion;
 
     public Torwart(String name, int alter, int stärke, int motivation, int tore, int reaktion) {
-        super(name, alter, stärke, 0 , motivation, 0 );
+        super(name, alter, stärke, 0 , motivation, 0 , 1);
         this.reaktion= reaktion;
     }
 
