@@ -17,9 +17,7 @@ public class Trainer {
         return alter;
     }
 
-    public int getErfahrung() {
-        return erfahrung;
-    }
+    public int getErfahrung() {return erfahrung;}
 
     public void setName(String name) {
         this.name = name;
@@ -33,4 +31,12 @@ public class Trainer {
         this.erfahrung= erfahrung;
     }
 
+    @Override
+    public String toString() {
+        String trainer = " ";
+        trainer += "\nName: " + name;
+        trainer += "\nAlter: " + alter;
+        trainer += "\nErfahrung: " + erfahrung;
+        return trainer;
+    }
 }
