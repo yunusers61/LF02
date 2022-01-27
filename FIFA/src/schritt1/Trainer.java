@@ -14,9 +14,9 @@ public class Trainer extends Person {
         this.erfahrung= erfahrung;
     }
 
-    @Override
-    public String toString() {
-        String trainer = super.toString();
+    public String toString(){
+        String trainer = " ";
+        trainer += super.toString();
         trainer += "\nErfahrung: " + erfahrung;
         return trainer;
     }

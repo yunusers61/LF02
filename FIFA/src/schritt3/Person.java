@@ -23,7 +23,7 @@ public class Person {
 
     @Override
     public String toString() {
-        String person = super.toString();
+        String person = " ";
         person += "\nName: " + name;
         person += "\nAlter: " + alter;
         return person;
