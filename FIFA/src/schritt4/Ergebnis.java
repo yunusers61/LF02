@@ -1,35 +1,30 @@
 package schritt4;
 
 public class Ergebnis {
-    private int Torheim;
-    private int Torgast;
+    private int toreHeim;
+    private int toreGast;
 
-    public Ergebnis(int Torheim, int Torgast) {
-        this.Torheim = Torheim;
-        this.Torgast = Torgast;
 
-    }
-    //get
-
-    public int getTorheim() {
-        return Torheim;
+    public int getToreHeim() {
+        toreHeim ++;
+        return toreHeim;
     }
 
-    public int getTorgast() {
-        return Torgast;
+    public int getToreGast() {
+        toreGast ++;
+        return toreGast;
     }
 
-    //set
-    public void setTorheim(int torheim) {
-        Torheim = torheim;
+    @Override
+    public String toString() {
+        return "[Ergebnis]" +
+                "\n[Heimtore]" + toreHeim +
+                "\n[Gasttore]" + toreGast;
     }
 
-    public void setTorgast(int torgast) {
-        Torgast = torgast;
+    public void addToreHeim() {
     }
 
-    //add
-    public void addTorheim(int torheim) {
-        this.Torheim = Torheim;
+    public void addToregast() {
     }
 }
