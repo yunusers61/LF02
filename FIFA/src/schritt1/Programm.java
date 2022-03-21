@@ -4,6 +4,7 @@ import schritt2.Torwart;
 import schritt4.Ergebnis;
 import schritt4.Mannschaft2;
 import schritt4.Mannschaft1;
+import schritt4.Spiel;
 import schritt5.Gameplay;
 
 import java.sql.SQLOutput;
@@ -75,7 +76,8 @@ public class Programm {
         Mannschaft2 realnoobmadrid= new Mannschaft2("real noobmadrid",yunus,neuer,noobmadrid);
         System.out.println(noobmadrid);
 
-        System.out.print(Ergebnis.class);
-        System.out.println(Gameplay.class);
+        System.out.print(yunuscelona);
+        System.out.print(realnoobmadrid);
+
     }
 }
