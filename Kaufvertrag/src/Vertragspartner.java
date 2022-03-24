@@ -11,6 +11,10 @@ public class Vertragspartner {
         this.adresse = adresse;
     }
 
+    public Vertragspartner(String klaus, String brandt) {
+    }
+
+
     public String getVorname() {
         return vorname;
     }

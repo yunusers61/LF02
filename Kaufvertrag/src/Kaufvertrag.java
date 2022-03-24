@@ -2,8 +2,6 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
 public class Kaufvertrag {
-    String datei = "H:/Kaufvertrag.txt";
-    PrintWriter writer = new PrintWriter(datei);
     private Vertragspartner verkaufer;
     private Vertragspartner kaeufer;
     private Ware ware;
@@ -14,6 +12,9 @@ public class Kaufvertrag {
         this.kaeufer=kaeufer;
         this.ware=ware;
         this.zahlungsModalitaeten=zahlungsModalitaeten;
+    }
+
+    public Kaufvertrag(Vertragspartner verkaeufer, Vertragspartner kaeufer, Ware ware) {
     }
 
     public Vertragspartner getVerkaufer() {
@@ -28,7 +29,7 @@ public class Kaufvertrag {
         return kaeufer;
     }
 
-    public void setKaeufer(Vertragspartner kaeufer) {
+    public void setKaeufer(Vertragspartner aeufer) {
         this.kaeufer = kaeufer;
     }
 
@@ -40,7 +41,7 @@ public class Kaufvertrag {
         this.ware = ware;
     }
 
-    public String getZahlungsModalitaeten() {
+    public String getZahlungsModalitaeten(){
         return zahlungsModalitaeten;
     }
 
@@ -56,7 +57,5 @@ public class Kaufvertrag {
                 ", ware=" + ware +
                 ", zahlungsModalitaeten='" + zahlungsModalitaeten + '\'' +
                 '}';
-        writer.println("Kaufvertrag");
-        writer.close();
     }
 }

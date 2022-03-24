@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class Ware {
@@ -5,12 +7,13 @@ public class Ware {
     private double preis;
     private List<String> besonderheiten;
     private List<String> maengel;
-    public Ware(String bezeichnung,double preis,List<String> besonderheiten, List<String> maengel){
+    public Ware(String bezeichnung,double preis){
         this.bezeichnung=bezeichnung;
         this.preis=preis;
-        this.besonderheiten=besonderheiten;
-        this.maengel=maengel;
+        this.besonderheiten=new ArrayList<>();
+        this.maengel=new ArrayList<>();
     }
+
 
     public String getBezeichnung() {
         return bezeichnung;
@@ -53,4 +56,6 @@ public class Ware {
                 ", maengel=" + maengel +
                 '}';
     }
+
+
 }
